@@ -70,18 +70,7 @@ public class Taller1 {
                     System.out.println("prioridad:" + t.getPrioridad());
                     System.out.println("================");
                 }
-                for(int i=5; i>=1; i--){
-                    for(Tarea tarea: misTareas){
-                        if(tarea.getPrioridad()== i){
-                            System.out.println("id:"+ tarea.getIdTarea());
-                            System.out.println("Descripcion:"+ tarea.getDescripcion());
-                            System.out.println("Prioridad:" + tarea.getPrioridad());
-                            
-                        }
-                    }
-
                
-                
             break;
             
             case 3:
