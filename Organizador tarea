@@ -52,7 +52,17 @@ public class Taller1 {
             case 2:
                 System.out.println("===Tareas registradas");
                   //tareas en orden descendente
-             
+                    //tareas en orden descendente
+                for (int i = 0; i < misTareas.size() -1; i++) {
+                for (int a = 0; a < misTareas.size() - 1 - i; a++) {
+                if (misTareas.get (a).getPrioridad() < misTareas.get(a + 1).getPrioridad()) {
+                // temporal asegura que no se pierda ningun valor al momento de ordenar
+                Tarea temp = misTareas.get(a);
+                misTareas.set(a, misTareas.get(a + 1));
+                misTareas.set(a + 1, temp);
+                }
+                }
+                }
                 for(Tarea t: misTareas)
                 {
                     System.out.println("id:"+ t.getId());
